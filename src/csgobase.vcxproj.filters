@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Helpers">
+      <UniqueIdentifier>{bf5a58f1-1114-4099-a146-5433ef65084e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Helpers">
+      <UniqueIdentifier>{68418df5-0f5d-401e-acc7-0b2ffac4ef26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK">
+      <UniqueIdentifier>{9d131acb-ad6d-4592-91e2-6f8ecccae8c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Hooks">
+      <UniqueIdentifier>{a05c202f-7db3-4f2d-83df-d1f7585f4422}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\Class">
+      <UniqueIdentifier>{4229b01e-694d-466a-9777-0c87d1382ca7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\Interface">
+      <UniqueIdentifier>{77726853-9289-4e8d-a6d4-34fecfd716a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\Misc">
+      <UniqueIdentifier>{27486200-92db-4bf2-9c2a-fb20e507b448}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SDK\Math">
+      <UniqueIdentifier>{b1dd5b46-4887-4491-8c81-1d430d744c98}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="csgo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vmt.h">
+      <Filter>Header Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Header Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\CBaseEntity.h">
+      <Filter>Header Files\SDK\Class</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\ClientClass.h">
+      <Filter>Header Files\SDK\Class</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\DataTable.h">
+      <Filter>Header Files\SDK\Class</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\IClientEntity.h">
+      <Filter>Header Files\SDK\Class</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\IBaseClientDLL.h">
+      <Filter>Header Files\SDK\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\IClientEntityList.h">
+      <Filter>Header Files\SDK\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\IVEngineClient.h">
+      <Filter>Header Files\SDK\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\IVModelInfoClient.h">
+      <Filter>Header Files\SDK\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\vfunc.h">
+      <Filter>Header Files\SDK\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\netvars.h">
+      <Filter>Header Files\SDK\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\fnvhash.h">
+      <Filter>Header Files\SDK\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\CGlobalVarsBase.h">
+      <Filter>Header Files\SDK\Class</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\enums.h">
+      <Filter>Header Files\SDK\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\CClientState.h">
+      <Filter>Header Files\SDK\Class</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\ISurface.h">
+      <Filter>Header Files\SDK\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\IAppSystem.h">
+      <Filter>Header Files\SDK\Class</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\IVModelRender.h">
+      <Filter>Header Files\SDK\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\studio.h">
+      <Filter>Header Files\SDK\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\math\matrix.h">
+      <Filter>Header Files\SDK\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\math\qangle.h">
+      <Filter>Header Files\SDK\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\math\vector.h">
+      <Filter>Header Files\SDK\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\math\vector2.h">
+      <Filter>Header Files\SDK\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\math\vector4.h">
+      <Filter>Header Files\SDK\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\IMaterialSystem.h">
+      <Filter>Header Files\SDK\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\IRenderView.h">
+      <Filter>Header Files\SDK\Interface</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.cpp">
+      <Filter>Source Files\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="vmt.cpp">
+      <Filter>Source Files\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="core.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="endscene.cpp">
+      <Filter>Source Files\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="reset.cpp">
+      <Filter>Source Files\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\netvars.cpp">
+      <Filter>Header Files\SDK\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="drawmodelexecute.cpp">
+      <Filter>Source Files\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\math\matrix.cpp">
+      <Filter>Header Files\SDK\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\math\vector2.cpp">
+      <Filter>Header Files\SDK\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\math\vector4.cpp">
+      <Filter>Header Files\SDK\Math</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
