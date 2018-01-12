@@ -163,7 +163,11 @@
     <ClInclude Include="sdk\CClientState.h" />
     <ClInclude Include="sdk\CBaseEntity.h" />
     <ClInclude Include="sdk\CGlobalVarsBase.h" />
+    <ClInclude Include="sdk\checksum_crc.h" />
+    <ClInclude Include="sdk\checksum_md5.h" />
+    <ClInclude Include="sdk\CInput.h" />
     <ClInclude Include="sdk\ClientClass.h" />
+    <ClInclude Include="sdk\CUserCmd.h" />
     <ClInclude Include="sdk\DataTable.h" />
     <ClInclude Include="sdk\enums.h" />
     <ClInclude Include="sdk\fnvhash.h" />
@@ -191,11 +195,20 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="core.cpp" />
+    <ClCompile Include="createmove.cpp" />
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="drawmodelexecute.cpp" />
     <ClCompile Include="endscene.cpp" />
     <ClCompile Include="hooks.cpp" />
     <ClCompile Include="reset.cpp" />
+    <ClCompile Include="sdk\checksum_crc.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="sdk\checksum_md5.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="sdk\math\matrix.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>

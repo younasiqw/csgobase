@@ -17,15 +17,8 @@ void __stdcall csgo::hooks::hook_drawmodelexecute(IMatRenderContext * ctx, const
 		{
 			interfaces::renderview->SetColorModulation(160, 10, 0);
 		}
-	} else if (strstr(model->szName, "v_sleeve") != nullptr)
-	{
-		auto material = interfaces::matsystem->FindMaterial(model->szName, TEXTURE_GROUP_MODEL);
-		if (!material) return;
-
-		material->SetMaterialVarFlag(MATERIAL_VAR_NO_DRAW, true);
-		interfaces::model_render->ForcedMaterialOverride(material);
 	}
 
-	auto ofunc = mdlrender.get_original<DrawModelExecute>(indices::DrawModelExecute);
+	auto ofunc = mdlrender.get_original<drawmodelexecute>(indices::drawmodelexecute);
 	return ofunc(interfaces::model_render, ctx, state, info, matrix);
 }

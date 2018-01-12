@@ -12,6 +12,8 @@
 #include "sdk/CBaseEntity.h"
 #include "sdk/CGlobalVarsBase.h"
 #include "sdk/IAppSystem.h"
+#include "sdk/CUserCmd.h"
+#include "sdk/CInput.h"
 
 #include "sdk/IBaseClientDLL.h"
 #include "sdk/IClientEntityList.h"

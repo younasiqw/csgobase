@@ -3,7 +3,7 @@
 
 long __stdcall csgo::hooks::hook_reset(IDirect3DDevice9* device, D3DPRESENT_PARAMETERS* pPresentationParameters)
 {
-	auto ofunc = dx9.get_original<Reset>(indices::Reset);
+	auto ofunc = dx9.get_original<reset>(indices::reset);
 	auto hr = ofunc(device, pPresentationParameters);
 
 	if (hr >= 0)
