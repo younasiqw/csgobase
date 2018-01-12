@@ -27,6 +27,7 @@ namespace csgo
 			constexpr auto reset = 16;
 			constexpr auto drawmodelexecute = 21;
 			constexpr auto createmove = 21;
+			constexpr auto painttraverse = 41;
 		};
 
 		extern vmt dx9;
@@ -43,6 +44,10 @@ namespace csgo
 		using createmove = void(__thiscall*)(IBaseClientDLL*, int, float, bool);
 		void __stdcall hook_createmove(int sequence, float frametime, bool active, bool& sendpacket);
 		void __stdcall hook_createmove_proxy(int sequence, float frametime, bool active);
+
+		extern vmt panel;
+		using painttraverse = void(__thiscall*)(IPanel*, vgui::VPANEL, bool, bool);
+		void __stdcall hook_painttraverse(vgui::VPANEL vpanel, bool forcerepaint, bool allowforce);
 
 		void init();
 		void kill();
@@ -79,6 +84,7 @@ namespace csgo
 		extern IVEngineClient* engine_client;
 		extern IVModelInfoClient* model_info;
 		extern IVModelRender* model_render;
+		extern IPanel* panel;
 		extern ISurface* surface;
 		extern IMaterialSystem* matsystem;
 		extern IVRenderView* renderview;

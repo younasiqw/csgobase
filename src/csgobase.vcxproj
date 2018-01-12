@@ -176,6 +176,7 @@
     <ClInclude Include="sdk\IClientEntity.h" />
     <ClInclude Include="sdk\IClientEntityList.h" />
     <ClInclude Include="sdk\IMaterialSystem.h" />
+    <ClInclude Include="sdk\IPanel.h" />
     <ClInclude Include="sdk\IRenderView.h" />
     <ClInclude Include="sdk\ISurface.h" />
     <ClInclude Include="sdk\IVEngineClient.h" />
@@ -200,6 +201,7 @@
     <ClCompile Include="drawmodelexecute.cpp" />
     <ClCompile Include="endscene.cpp" />
     <ClCompile Include="hooks.cpp" />
+    <ClCompile Include="painttraverse.cpp" />
     <ClCompile Include="reset.cpp" />
     <ClCompile Include="sdk\checksum_crc.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>

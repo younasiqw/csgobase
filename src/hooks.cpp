@@ -8,6 +8,7 @@ namespace csgo
 		vmt dx9;
 		vmt mdlrender;
 		vmt vclient;
+		vmt panel;
 
 		void init()
 		{
@@ -21,6 +22,9 @@ namespace csgo
 
 			vclient.setup(interfaces::client);
 			vclient.hook_index(indices::createmove, hook_createmove_proxy);
+
+			panel.setup(interfaces::panel);
+			panel.hook_index(indices::painttraverse, hook_painttraverse);
 			core::msg("done!\n");
 		}
 
@@ -29,6 +33,7 @@ namespace csgo
 			dx9.unhook_all();
 			mdlrender.unhook_all();
 			vclient.unhook_all();
+			panel.unhook_all();
 		}
 	}
 }

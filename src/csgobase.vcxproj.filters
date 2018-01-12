@@ -137,6 +137,9 @@
     <ClInclude Include="sdk\checksum_md5.h">
       <Filter>Header Files\SDK\Misc</Filter>
     </ClInclude>
+    <ClInclude Include="sdk\IPanel.h">
+      <Filter>Header Files\SDK\Interface</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp">
@@ -186,6 +189,9 @@
     </ClCompile>
     <ClCompile Include="sdk\checksum_md5.cpp">
       <Filter>Header Files\SDK\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="painttraverse.cpp">
+      <Filter>Source Files\Hooks</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
