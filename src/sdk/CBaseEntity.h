@@ -9,6 +9,7 @@ public:
 	NETVAR(m_iTeamNum, int32_t, "CBaseEntity->m_iTeamNum");
 	NETVAR(m_nModelIndex, int32_t, "CBaseEntity->m_nModelIndex");
 	NETVAR(m_flSimulationTime, float, "CBaseEntity->m_flSimulationTime");
+	NETVAR(m_fFlags, int32_t, "CBaseEntity->m_fFlags");
 	bool isPlayer() { return vfunc<bool(__thiscall*)(C_BaseEntity*)>(this, 152)(this); };
 };
 
